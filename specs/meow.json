@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "name": "meow",
+  "base_rootfs": "/home/spikeypear/my_stuff/golang/AgentBox/rootfs/alpine-min",
+  "entry_command": ["/usr/btop"],
+  "memory_limit": "256m",
+  "cpu_limit": "0.5",
+  "pid_limit": 64,
+  "network_mode": "bridge",
+  "restart_policy": "on-failure"
+}
