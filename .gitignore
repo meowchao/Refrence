@@ -1,1 +1,13 @@
-images/python-minimal/
+# compiled binaries - build with `go build`, don't commit
+/agentd
+/agentctl
+
+# generated rootfs/images - these are built BY scripts/*.sh, not source.
+# the scripts themselves (source) ARE tracked; their output is not.
+/rootfs/*
+/images/*
+!rootfs/.gitkeep
+!images/.gitkeep
+
+# runtime state created by agentd when containers run
+/var/lib/agentbox/
